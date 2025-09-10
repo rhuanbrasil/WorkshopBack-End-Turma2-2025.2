@@ -7,7 +7,7 @@ print("nome")
 
 ##Desafio médio
 
-numeros = [10, 20, 30]
+numeros = [10, 2]
 indice = int(input("Digite um índice para acessar a lista: ")) 
 if len(numeros) < indice:
     raise IndexError("O valor informado excede a quantidade de index existentes, digite um valor válido")
