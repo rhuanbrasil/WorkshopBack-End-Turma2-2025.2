@@ -1,0 +1,8 @@
+<h1>Detalhes do Endereço</h1>
+<p><strong>Rua:</strong> {{ object.rua }}</p>
+<p><strong>Bairro:</strong> {{ object.bairro }}</p>
+<p><strong>Cidade:</strong> {{ object.cidade }}</p>
+<p><strong>Estado:</strong> {{ object.estado }}</p>
+<p><strong>CEP:</strong> {{ object.cep }}</p>
+<hr>
+<a href="{% url 'ViaCep:endereco-list' %}">Voltar para a Lista</a>

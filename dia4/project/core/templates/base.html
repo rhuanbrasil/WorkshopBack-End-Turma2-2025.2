@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}Consulta CEP{% endblock %}</title>
+    
+    <style>
+        body { font-family: sans-serif; margin: 2em; color: #333; }
+        nav { background-color: #f4f4f4; padding: 1em; margin-bottom: 1em; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007BFF; }
+        .content { border: 1px solid #ccc; padding: 1em; }
+        button { background-color: #007BFF; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="{% url 'ViaCep:form' %}"><strong>Consultar Novo CEP</strong></a>
+            <a href="{% url 'ViaCep:endereco-list' %}"><strong>Ver Endereços Salvos</strong></a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Meu Projeto de Consulta de CEP</p>
+    </footer>
+
+</body>
+</html>
